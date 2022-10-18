@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulacion de crecimiento de la sociedad</title>
+
+    <link href="/dist/output.css" rel="stylesheet">
+    <script type="text/javascript" src="./sim-contaminacion.js" defer></script>
+</head>
+<body class="Fondo">
+  
+  <div class="flex flex-col justify-center items-center self-center">
+
+    <div id="simulacionPrincipal">
+
+      <div class="pt-4" id="Poblacion">
+        <h1 class="text-2xl font-bold text-center text-gray-800">Poblacion</h1>
+  
+        <h2 class="text-2md font-bold text-center text-gray-800 pt-2" id="cantidadPoblacion">Poblacion actual: </h2>
+  
+        <h2 class="text-2md font-bold text-center text-gray-800 pt-2" id="tasaCrecimientoPoblacional">Tasa de crecimiento poblacional: </h2>
+  
+      </div>
+  
+  
+      <div class="pt-4" id="Industria">
+        <h1 class="text-2xl font-bold text-center text-gray-800">Industria</h1>
+  
+        <h2 class="text-2md font-bold text-center text-gray-800 pt-2" id="cantidadIndustrias">Cantidad de industrias: </h2>
+  
+        <h2 class="text-2md font-bold text-center text-gray-800 pt-2" id="capitalIndustrias">Capital conjunto de las industrias: </h2>
+  
+      </div>
+  
+        
+      <div class="pt-4" id="Contaminacion">
+        <h1 class="text-2xl font-bold text-center text-gray-800">Contaminacion</h1>
+  
+        <h2 class="text-2md font-bold text-center text-gray-800 pt-2" id="nivelContaminacion">Nivel de contaminacion actual: </h2>
+  
+      </div>
+
+    </div>
+
+    <div class="hidden" id="resultadosFinales">
+      
+      <div class="pt-10 pb-10">
+          <div class="text-2md font-bold text-center text-gray-800 pt-4 " id="vecesDisminucionPoblacion">Cantidad de veces que disminuyo la poblacion: </div>
+          <div class="text-2md font-bold text-center text-gray-800 pt-4 " id="cantidadDisminucionPoblacion">Cantidad de poblacion disminuida: </div>
+          <div class="text-2md font-bold text-center text-gray-800 pt-4 " id="cantidadDisminucionCapitalIndustrial">Cantidad de capital disminuido: </div>
+          <div class="text-2md font-bold text-center text-gray-800 pt-4 " id="cantidadContaminacionIndustrial">Cantidad de contaminacion aumentada: </div>
+
+        </div>
+    </div>
+    
+    <div class="flex-row pt-8">
+
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4" id="botonSimular" onclick="simulacion()">Simular</button>
+    
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4" id="botonFinalizar" onclick="pararSimulacion()">Finalizar</button>
+
+    </div>
+
+    </div>
+
+
+   
+
+  </div>
+
+</body>
+</html>
